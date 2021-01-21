@@ -1,6 +1,5 @@
 <h2>User Details</h2>
 
-
 <div class="card card-header results-block">
   <table class="col-md-12">
     <tbody>
@@ -23,9 +22,7 @@
 </div>
 
 <% if !@tracked_stocks.empty? %>
-  <%= render 'stocks/list'%>
+  <%= render 'stocks/list' %>
 <% else %>
-  <p class='lead'>This user is not tracking any stocks</p>
+  <p class="lead">This user is not tracking any stocks.</p>
 <% end %>
-<%= link_to 'Back', my_friends_path, class: "btn btn-primary" %>
-
