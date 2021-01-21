@@ -1,31 +1,33 @@
 @import 'bootstrap/dist/css/bootstrap';
 
-// .navbar-brand {
-//   font-size: 3rem;
-// }
+/*
+.navbar-brand {
+    font-size: 3rem;
+}
+*/
 
 .search-area {
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 .no-right-padding {
-  padding-right: 0 !important;
+    padding-right: 0 !important;
 }
 
 .no-left-padding {
-  padding-left: 0 !important;
+    padding-left: 0 !important;
 }
 
 .results-block {
-  display: inline-block;
-  margin-bottom: 1rem;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .logout-button {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .user-name {
-  margin-top: 3.5%;
-  padding-right: 5px;
+    margin-top: 3.5%;
+    padding-right: 5px;
 }

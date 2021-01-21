@@ -1,21 +1,20 @@
-class StocksController < ApplicationController
-
+class FriendsController < ApplicationController
   def search
-    if params[:stock].present?
-      @stock = Stock.new_lookup(params[:stock])
-      if @stock
+    if params[:friend].present?
+      @friend = Friendship.new_lookup(params[:friend])
+      if @friend
         respond_to do |format|
           format.js { render partial: 'users/result' }
         end
       else
         respond_to do |format|
-          flash.now[:alert] = "Please enter a valid symbol to search"
+          flash.now[:alert] = "Please enter a valid email to search"
           format.js { render partial: 'users/result' }
         end
-      end    
+      end
     else
       respond_to do |format|
-        flash.now[:alert] = "Please enter a symbol to search"
+        flash.now[:alert] = "Please enter an email to search"
         format.js { render partial: 'users/result' }
       end
     end
