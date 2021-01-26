@@ -20,4 +20,13 @@ class StocksController < ApplicationController
       end
     end
   end
+
+  def refresh
+    current_user.stocks.each do |stock|
+      new_stock = Stock.new_lookup(stock.ticker)
+      stock.last_price = new_stock.last_price
+      stock.save
+    end
+    redirect_to my_portfolio_path
+  end
 end

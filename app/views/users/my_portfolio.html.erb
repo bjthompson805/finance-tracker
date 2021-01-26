@@ -1,4 +1,13 @@
-<h1>My Portfolio</h1>
+<div class="row col-sm-10">
+  <h1>My Portfolio</h1>
+  <div class="ml-auto">
+    <%= form_tag refresh_stocks_path, method: :get do %>
+        <%= button_tag type: :submit, class: "btn btn-success" do %>
+            <%= fa_icon 'refresh 2x' %>
+        <% end %>
+    <% end %>
+  </div>
+</div>
 
 <div class='search-area'>
   <h3>Search Stocks</h3>
